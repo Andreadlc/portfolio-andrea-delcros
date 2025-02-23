@@ -1,0 +1,302 @@
+/* styles.css */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+
+/* Page de couverture */
+#cover {
+    text-align: center;
+    padding: 40px;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;  /* Ajuste la taille de la photo */
+    height: 150px;
+    border-radius: 50%; /* Rendre l'image ronde */
+    object-fit: cover; /* Ajuste l'image à la taille sans déformer */
+    border: 4px solid #858585; /* Optionnel : ajouter une bordure autour de l'image */
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* À propos */
+#about {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projets */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+/* Footer */
+footer {
+    background-color: #333; /* Fond du footer */
+    color: #fff; /* Texte par défaut en blanc */
+    padding: 30px 0;
+    border-top: 4px solid #fff; /* Bordure en haut du footer */
+    text-align: center;
+}
+
+/* Liens sociaux */
+#social-links {
+    margin-bottom: 20px;
+}
+
+#social-links h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ff6f61; /* Titre des liens sociaux en couleur différente (ex : rouge) */
+}
+
+#social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#social-links li {
+    display: inline-block;
+}
+
+#social-links a {
+    color: #fff; /* Liens sociaux en blanc */
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: #ff6f61 1px solid; /* Bordure autour des liens sociaux */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+/* Effet au survol des liens */
+#social-links a:hover {
+    background-color: #ff6f61; /* Rouge clair au survol */
+    color: #fff; /* Texte blanc au survol */
+}
+
+/* Texte copyright */
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc; /* Texte copyright en couleur gris clair */
+}
+
+
+
+/* Style par défaut */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Si l'écran est inférieur ou égal à 768px (tablette ou smartphone) */
+@media (max-width: 768px) {
+    /* Pour le header */
+    .hero h1 {
+        font-size: 2.5em; /* Taille du texte réduite pour les petits écrans */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Taille du texte réduite pour les petits écrans */
+    }
+
+    /* Navbar */
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    /* Mise en page des projets */
+    #projects {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+
+    /* Formulaire de contact */
+    #contact form {
+        flex-direction: column; /* Formulaire en colonne */
+    }
+
+    /* Sections */
+    section {
+        padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9em; /* Plus petit pour les petits écrans */
+    }
+}
+
+/* Si l'écran est inférieur ou égal à 480px (écran très petit, smartphone) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em; /* Taille encore réduite */
+    }
+
+    .hero p {
+        font-size: 1em; /* Taille encore réduite */
+    }
+
+    /* Navbar */
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Liste en bloc pour un meilleur affichage */
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    /* Projets */
+    #projects {
+        grid-template-columns: 1fr; /* Toujours une seule colonne */
+    }
+
+    /* Formulaire de contact */
+    #contact input,
+    #contact textarea,
+    #contact button {
+        width: 100%; /* Champs de formulaire prennent toute la largeur */
+    }
+
+    footer {
+        padding: 20px 10px; /* Plus petit padding pour économiser de l'espace */
+    }
+
+    footer p {
+        font-size: 0.8em; /* Plus petit texte pour économiser de l'espace */
+    }
+}
