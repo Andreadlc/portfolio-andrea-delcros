@@ -11,11 +11,36 @@
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* Titres principaux */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;  /* Poids moyen pour plus de visibilité */
+    font-size: 2.5em;  /* Taille plus grande */
+    margin-bottom: 20px;
+}
+
+/* Sous-titres */
+h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;  /* Poids plus léger que les titres principaux */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Titres secondaires (h5, h6) */
+h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;  /* Poids léger pour un aspect plus discret */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 
 /* Header Section */
 header {
@@ -196,15 +221,7 @@ footer p {
     color: #ccc; /* Texte copyright en couleur gris clair */
 }
 
-
-
-/* Style par défaut */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+/* Media Queries */
 
 /* Si l'écran est inférieur ou égal à 768px (tablette ou smartphone) */
 @media (max-width: 768px) {
