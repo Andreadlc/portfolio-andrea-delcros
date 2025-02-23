@@ -12,6 +12,8 @@
 
     <!-- Lien vers Google Fonts pour utiliser les polices Poppins et Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -46,7 +48,7 @@
         <p>Email : andreadelcros7@gmail.com</p>
         <p>Téléphone : 06 43 62 33 29</p>
         <p>Date : 23/10/2024</p>
-   
+
 
     </section>
 
@@ -62,30 +64,92 @@
         <p>Je souhaite intégrer une entreprise où je pourrai mettre à profit mes compétences en programmation, gestion de bases de données et développement web. Mon but est d'acquérir une expérience solide dans l'IT.</p>
     </section>
 
-    <!-- Compétences -->
+    <!-- Mes compétences -->
     <section id="skills">
         <h2>Mes compétences</h2>
-        <ul>
-            <li>Programmation : Java, Python, C</li>
-            <li>Développement web : HTML, CSS, JavaScript, PHP</li>
-            <li>Bases de données : SQL, PL/SQL</li>
-            <li>Communication efficace et travail d'équipe</li>
-            <li>Rigueur, précision et adaptabilité</li>
-        </ul>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <p>Programmation : Java, Python, C</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <p>Développement web : HTML, CSS, JavaScript, PHP</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <p>Bases de données : SQL, PL/SQL</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-comments"></i>
+                <p>Communication efficace et travail d'équipe</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <p>Rigueur, précision et adaptabilité</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <p>Développement Python avancé</p>
+            </div>
+
+        </div>
     </section>
 
-    <!-- Projets -->
+
+
+
     <section id="projects">
         <h2>Mes projets</h2>
+        <br>
+
+        <!-- Bloc 1 : Image à gauche, texte à droite -->
         <div class="project">
-            <h3>Jeu de cartes en Python</h3>
-            <p>Création d'un jeu de cartes basé sur le modèle du jeu "Diamant" ou "Incan Gold".</p>
+            <div class="project-image">
+                <img src="images/diamant.jpg" alt="Logo du jeu Diamant">
+            </div>
+            <div class="project-description">
+                <h3>Jeu de cartes en Python</h3>
+                <p><strong>Situation :</strong> Lors d'un projet personnel, j'ai voulu développer un jeu de cartes inspiré du jeu "Diamant" (ou "Incan Gold"), qui combine stratégie et prise de risque.</p>
+                <p><strong>Tâche :</strong> Concevoir un jeu fonctionnel avec une interface en ligne de commande.</p>
+                <p><strong>Action :</strong> J'ai utilisé Python pour coder le jeu, gérer les cartes, et les décisions des joueurs.</p>
+                <p><strong>Résultat :</strong> Le jeu a été testé et apprécié par mes amis, renforçant mes compétences en programmation Python.</p>
+            </div>
         </div>
+
+        <!-- Vidéo du projet Jeu de cartes en Python -->
+        <div class="project-video">
+            <video controls>
+                <source src="videos/jeu_de_cartes.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+
+        <!-- Bloc 2 : Image en bas, texte en bas -->
         <div class="project">
-            <h3>Site web pédagogique</h3>
-            <p>Création d'un site pour détailler un projet de voyage pédagogique à l'étranger en HTML et CSS.</p>
+            <div class="project-description">
+                <h3>Site web pédagogique</h3>
+                <p><strong>Situation :</strong> Création d'un site pour un projet de voyage pédagogique.</p>
+                <p><strong>Tâche :</strong> Créer un site en HTML et CSS pour documenter le voyage.</p>
+                <p><strong>Action :</strong> HTML pour la structure et CSS pour le design responsive.</p>
+                <p><strong>Résultat :</strong> Le site a bien fonctionné et a facilité l'accès aux informations pour les élèves.</p>
+            </div>
+            <div class="project-image">
+                <img src="images/diamant.jpg" alt="Capture d'écran du site pédagogique">
+            </div>
+        </div>
+
+        <!-- Vidéo du projet Site Web Pédagogique -->
+        <div class="project-video">
+            <video controls>
+                <source src="videos/site_web_pedagogique.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
         </div>
     </section>
+
+
+
 
     <!-- Expériences -->
     <section id="experience">
@@ -113,7 +177,7 @@
 
     <!-- Contact -->
     <section id="contact">
-        
+
         <h2>Contactez-moi</h2>
         <form action="https://formspree.io/f/mrbevbdj" method="POST">
             <input type="text" name="name" placeholder="Nom" required>
@@ -121,7 +185,7 @@
             <textarea name="message" placeholder="Votre message" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
-        
+
     </section>
 
     <!-- Footer -->
@@ -137,7 +201,7 @@
 
     <p>&copy; 2025 Andrea Delcros. Tous droits réservés.</p>
 </footer>
-
+    <script src="test.js"></script>
 
 </body>
 </html>
