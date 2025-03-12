@@ -210,7 +210,7 @@ section.show {
 }
 
 .project-video video {
-    width: 80%; /* Augmente la taille de la vidéo à 80% de la largeur du parent */
+    width: 70%; /* Augmente la taille de la vidéo à 80% de la largeur du parent */
     max-width: 900px; /* Limite la taille maximale de la vidéo */
     border: 5px solid #3498db; /* Ajoute une bordure bleue autour de la vidéo */
     border-radius: 10px; /* Ajoute un rayon de bordure pour arrondir les coins */
@@ -223,6 +223,34 @@ section.show {
     margin-bottom: 10px;  /* Espacement sous le titre */
     font-weight: 600;  /* Poids du texte plus important pour le titre */
 }
+
+/* Style pour le bouton de téléchargement du CV */
+.download-btn {
+    display: inline-block;
+    background-color: #00A8E8; /* Bleu pour le bouton */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px; /* Espace au-dessus du bouton */
+}
+
+.download-btn:hover {
+    background-color: #3498db; /* Couleur plus claire au survol */
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+.download-btn:active {
+    background-color: #2980b9; /* Couleur encore plus foncée lorsque le bouton est cliqué */
+}
+
+
+
 
 /* Contact Form */
 #contact form {
