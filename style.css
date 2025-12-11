@@ -202,7 +202,10 @@ section.show {
     width: 100%;  /* L'image prend la largeur maximale disponible dans son conteneur */
     height: auto;  /* Maintien les proportions de l'image */
 }
-
+.project-image.large img {
+    width: 150%;
+    height: auto;
+}
 /* Centrer la vidéo et ajouter une bordure */
 .project-video {
     text-align: center; /* Centre la vidéo */
@@ -402,3 +405,4 @@ footer {
         margin: 20px;
     }
 }
+
